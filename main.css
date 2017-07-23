@@ -200,6 +200,9 @@ article footer p{
 #site-footer{
 
     background: #333;
+    color: white;
+    text-align: center;
+
     /*
         TODO:
         - Style the site footer
