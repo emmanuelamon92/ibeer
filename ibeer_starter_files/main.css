@@ -51,6 +51,7 @@ img{
 #site-header{
 
 
+
     /*
         TODO
         - Flexbox property here
@@ -82,10 +83,8 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    font-family: dancing script;
-
     /*
-        TODO:!check!
+        TODO:
         - Use the script font: 'Dancing Script' fot this text
     */
 }
@@ -102,7 +101,7 @@ img{
     /*order: 0;*/
 
     /*
-        TODO:!check!
+        TODO:
         - Use Flexbox to arrange the navigation links
     */
 }
@@ -112,8 +111,9 @@ img{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+
     /*
-        TODO: ?done?
+        TODO:
         - Flexbox - Create general spacing between nav links
     */
 }
@@ -121,7 +121,7 @@ img{
     margin-right: 400px;
 
     /*
-        TODO: ?done?
+        TODO:
         - Flexbox - The logo needs to take up more space
         that the other links
     */
@@ -130,7 +130,6 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-
     /*
         TODO:
         - Flexbox: Set the starting width of this element
