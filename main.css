@@ -1,5 +1,4 @@
 /*
-
 FONTS:
 
 'Josefin Sans'
@@ -10,7 +9,16 @@ COLORS:
 
 light tan: #eeebda
 
+align-content: center;
+align-self: center;
+align-items: center;
+flex-direction:column;
+justify-content: space-around;
+flex-wrap: nowrap;
+flex-flow: column;
+order: 0;
 */
+
 body{
     font-family: 'Noto Serif', serif;
     line-height: 1.8;
@@ -30,17 +38,6 @@ img{
 .wrapper{
     margin: 0 auto;
     width: 1000px;
-    display: flex;
-    /*align-content: center;*/
-    /*align-self: center;*/
-    /*align-items: center;*/
-    flex-direction:column;
-    /*justify-content: space-between;*/
-    /*flex-wrap: nowrap;*/
-    /*flex-flow: column;*/
-    /*order: 0;*/
-
-
     /*
         TODO: !check!
         - Center up the page
@@ -48,9 +45,17 @@ img{
         the major page sections
     */
 }
+
+.main-container{
+  display: flex;
+  width: 75%;
+  /*padding-bottom: 2em;*/
+  margin: 0 auto;
+  position: relative;
+  top: -35px;
+}
+
 #site-header{
-
-
     /*
         TODO
         - Flexbox property here
@@ -77,6 +82,7 @@ img{
 }
 #site-header div h1{
     top: 20px;
+
 }
 #site-header div h3{
     color: white;
@@ -92,14 +98,7 @@ img{
 #main-navigation{
     background: #444;
     display: flex;
-    /*align-content: center;*/
-    /*align-self: center;*/
-    /*align-items: center;*/
-    /*flex-direction:column;*/
     justify-content: space-around;
-    /*flex-wrap: nowrap;*/
-    /*flex-flow: column;*/
-    /*order: 0;*/
 
     /*
         TODO:!check!
@@ -111,7 +110,7 @@ img{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 0px 20px;
     /*
         TODO: ?done?
         - Flexbox - Create general spacing between nav links
@@ -130,17 +129,20 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-
+    width: auto;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
         - Use relative positioning to bump this upward
     */
+
 }
+
 aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 25%;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -181,8 +183,9 @@ article time{
     color: #666;
 }
 article img{
+  margin-left: auto;
     /*
-        TODO:
+        TODO: !check!
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
@@ -192,19 +195,18 @@ article footer p{
   font-family: times;
   text-align: center;
     /*
-        TODO:
+        TODO: !check!
         - Style the article footer
         HINT: Look to the article header;
     */
 }
 #site-footer{
-
     background: #333;
-    color: white;
+    color: White;
     text-align: center;
-
+    padding: 15px;
     /*
-        TODO:
+        TODO: !Check!
         - Style the site footer
     */
 }
