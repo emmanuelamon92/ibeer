@@ -152,9 +152,14 @@ main{
   flex-direction: row-reverse;
 }
 
+#Dinosaur-container p{
+  margin-right: 20px;
+}
+
 #Dos-Equis-Container{
   display: flex;
   flex-direction: row-reverse;
+  margin-right: 30px;
 }
 
 aside{
