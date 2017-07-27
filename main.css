@@ -33,11 +33,12 @@ img{
     max-width: 100%;
     padding: 0;
     margin: 0;
-    display: block;
+    block-size: 17em;
+
 }
 .wrapper{
     margin: 0 auto;
-    width: 1000px;
+    width: 60%;
     /*
         TODO: !check!
         - Center up the page
@@ -46,14 +47,20 @@ img{
     */
 }
 
+
 .main-container{
   display: flex;
   width: 75%;
   /*padding-bottom: 2em;*/
   margin: 0 auto;
   position: relative;
-  top: -35px;
+  top: -50px;
 }
+
+/*img{
+  flex-direction: row;
+  align-items: center;
+}*/
 
 #site-header{
     /*
@@ -117,7 +124,7 @@ img{
     */
 }
 #main-navigation #logo{
-    margin-right: 400px;
+    margin-right: 900px;
 
     /*
         TODO: ?done?
@@ -130,6 +137,8 @@ main{
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
     width: auto;
+    display: flex;
+    flex-direction: column;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -138,11 +147,21 @@ main{
 
 }
 
+#Dinosaur-container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#Dos-Equis-Container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 25%;
+    width: 100em;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
@@ -183,7 +202,10 @@ article time{
     color: #666;
 }
 article img{
-  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  margin: 0px;
+
     /*
         TODO: !check!
         - Float article images to the right
@@ -194,6 +216,7 @@ article footer p{
   text-transform:uppercase;
   font-family: times;
   text-align: center;
+  border-top: 1px solid #ccc;
     /*
         TODO: !check!
         - Style the article footer
